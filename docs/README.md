@@ -59,7 +59,27 @@ I built and deployed a simple guestbook application, Guestbook, using Kubernetes
 The project and [the course's Hands-on Labs](https://gist.github.com/nathandeflavis/0786fcf5bcc9feeab33ec3bca5463b81) are opportunities to put my Docker, Kubernetes and OpenShift skills into practice.
 
 # How can users can get started with the project?
-Please see [the project's website](https://guestbook-sn-labs-nathandeflav.labs-prod-openshift-san-a45631dc5778dc6371c67d206ba9ae5c-0000.us-east.containers.appdomain.cloud/).
+You can run the application in [an IBM Skills Network lab environment](https://skills.network).
+
+## Steps
+### Verify environment and command-line tools
+1. If a terminal is not already open, open a terminal window by using the menu in the editor: `Terminal > New Terminal`.
+2. If you're not already on the `/home/project` folder, change to it: `cd /home/project`
+3. Clone this repository: `[ ! -d 'guestbook' ] && git clone https://github.com/nathandeflavis/guestbook`
+4. Change to the `guestbook/v1/guestbook` directory: `cd guestbook/v1/guestbook`
+
+ ### Build the guestbook app
+1. Export your namespace as an environment variable: `export MY_NAMESPACE=sn-labs-$USERNAME`
+2. Build the guestbook app: `docker build . -t us.icr.io/$MY_NAMESPACE/guestbook:v1`
+3. Push the image to IBM Cloud Container Registry: `docker push us.icr.io/$MY_NAMESPACE/guestbook:v1`
+4. Verify that the image was pushed successfully: `ibmcloud cr images`
+5. In the `deployment.yml` file in the `v1/guestbook` directory, change the `template: spec: containers: -image` to use the format: `us.icr.io/<your sn labs namespace>/guestbook:v1`
+6. Apply the deployment: `kubectl apply -f deployment.yml`
+7. In a new terminal, view the application: `kubectl port-forward deployment.apps/guestbook 3000:3000`
+8. Click on the Skills Network button on the right.
+9. In the **'Skills Network Toolbox'**, click **Other**, then **Launch Application**.
+10. For the Application Port, enter: `3000`
+11. Press the return key.
 
 # Where can users can get help with the project?
 Users can contact the project's maintainers and contributors for help.
