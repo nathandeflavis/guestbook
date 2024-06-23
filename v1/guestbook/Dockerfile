@@ -12,7 +12,6 @@
 
 FROM golang:1.18 as builder
 
-#removed: COPY main.go .
 WORKDIR /app
 COPY main.go /app
 
@@ -28,17 +27,12 @@ COPY --from=builder /app/main /app/guestbook
 
 #<Please fill in the required Docker command>
 COPY public/index.html /app/public/index.html
-
 #<Please fill in the required Docker command>
 COPY public/script.js /app/public/script.js
-
 #<Please fill in the required Docker command>
 COPY public/style.css /app/public/style.css
-
 #<Please fill in the required Docker command>
 COPY public/jquery.min.js /app/public/jquery.min.js
-
-WORKDIR /app
 
 CMD ["./guestbook"]
 #<Please fill in the required Docker command>
