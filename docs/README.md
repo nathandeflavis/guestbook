@@ -27,7 +27,7 @@ You can run the application in [an IBM Skills Network lab environment](https://s
 ### Verify environment and command-line tools
 1. If a terminal is not already open, open a terminal window by using the menu in the editor: `Terminal > New Terminal`.
 2. If you're not already on the `/home/project` folder, change to it: `cd /home/project`
-3. Clone this repository: `[ ! -d 'guestbook' ] && git clone https://github.com/nathandeflavis/guestbook`
+3. Clone this repository: `[ ! -d 'guestbook' ] && git clone https://github.com/nathandeflavis/guestbook.git`
 4. Change to the `guestbook/v1/guestbook` directory: `cd guestbook/v1/guestbook`
 
  ### Build the guestbook app
