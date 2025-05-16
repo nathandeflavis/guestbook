@@ -1,9 +1,6 @@
 # guestbook
 A simple guestbook application ('Final Project' in [Introduction to Containers w/ Docker, Kubernetes & OpenShift](https://www.coursera.org/learn/ibm-containers-docker-kubernetes-openshift) course, part of [IBM Full Stack Software Developer Professional Certificate](https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer)).
 
-<img width="930" alt="up-app" src="https://github.com/user-attachments/assets/6ab222e8-0e41-4b41-9638-fc4623ae123f" />
-Guestbook.
-
 # What does the project do?
 ## Overview
 I built and deployed a simple guestbook application, Guestbook, using Kubernetes Deployments and Pods. I then applied Horizontal Pod Scaling to Guestbook and performed Rolling Updates and Rollbacks.
