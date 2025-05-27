@@ -1,6 +1,10 @@
 # guestbook
 A simple guestbook application ('Final Project' in [Introduction to Containers w/ Docker, Kubernetes & OpenShift](https://www.coursera.org/learn/ibm-containers-docker-kubernetes-openshift) course, part of [IBM Full Stack Software Developer Professional Certificate](https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer)).
 
+<img width="930" alt="up-app" src="https://github.com/user-attachments/assets/5ab3f1f7-325e-4228-8284-4b205ae43910" />
+
+Guestbook.
+
 # What does the project do?
 ## Overview
 I built and deployed a simple guestbook application, Guestbook, using Kubernetes Deployments and Pods. I then applied Horizontal Pod Scaling to Guestbook and performed Rolling Updates and Rollbacks.
@@ -18,7 +22,7 @@ I built and deployed a simple guestbook application, Guestbook, using Kubernetes
 10. Update the deployment after Rollback of the update.
 
 # Why is the project useful?
-The project and [the course's Hands-on Labs](https://gist.github.com/nathangjdf/0786fcf5bcc9feeab33ec3bca5463b81) are opportunities to put my Docker, Kubernetes and OpenShift skills into practice.
+The project and [the course's Hands-on Labs](https://gist.github.com/nathandeflavis/0786fcf5bcc9feeab33ec3bca5463b81) are opportunities to put my Docker, Kubernetes and OpenShift skills into practice.
 
 # How can users can get started with the project?
 You can run the application in [an IBM Skills Network lab environment](https://skills.network).
@@ -27,7 +31,7 @@ You can run the application in [an IBM Skills Network lab environment](https://s
 ### Verify environment and command-line tools
 1. If a terminal is not already open, open a terminal window by using the menu in the editor: `Terminal > New Terminal`.
 2. If you're not already on the `/home/project` folder, change to it: `cd /home/project`
-3. Clone this repository: `[ ! -d 'guestbook' ] && git clone https://github.com/nathangjdf/guestbook.git`
+3. Clone this repository: `[ ! -d 'guestbook' ] && git clone https://github.com/nathandeflavis/guestbook.git`
 4. Change to the `guestbook/v1/guestbook` directory: `cd guestbook/v1/guestbook`
 
  ### Build the guestbook app
@@ -47,4 +51,4 @@ You can run the application in [an IBM Skills Network lab environment](https://s
 Users can contact the project's maintainers and contributors for help.
 
 # Who maintains and contributes to the project?
-@nathangjdf
+@nathandeflavis
