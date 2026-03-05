@@ -22,7 +22,7 @@ I built and deployed a simple guestbook application, Guestbook, using Kubernetes
 10. Update the deployment after Rollback of the update.
 
 # Why is the project useful?
-The project and [the course's Hands-on Labs](https://gist.github.com/nathandeflavis/0786fcf5bcc9feeab33ec3bca5463b81) are opportunities to put my Docker, Kubernetes and OpenShift skills into practice.
+The project are opportunities to put my Docker and Kubernetes skills into practice.
 
 # How can users can get started with the project?
 You can run the application in [an IBM Skills Network lab environment](https://skills.network).
